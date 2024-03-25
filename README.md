@@ -1,0 +1,14 @@
+# Data we will take
+- ID
+- Name
+- Type 1, 2
+- Gender
+- Growth Rates
+- HP
+- Attack
+- Defence
+- Sp Attack
+- Sp Defence
+- Speed
+- Evolution chain (1 - 3)
+- Image
