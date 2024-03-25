@@ -1,17 +1,16 @@
-import requests
+from requests import Response, get as requests_get
+import json
 
-base_url = "https://pokeapi.co/api/v2/pokemon/"
+ID: int = 10
+URL: str = f'https://pokeapi.co/api/v2/pokemon/{ID}'
+HEADERS: dict = {"Content-Type": "application/json"}
 
-pokemon_name = "charmander"
-
-url = f"{base_url}{pokemon_name}"
-
-response = requests.get(url)
+response: Response = requests_get(URL)
 
 if response.status_code == 200:
     pokemon_data = response.json()
-    attack = pokemon_data['stats'][4]['base_stat']
-    defense = pokemon_data['stats'][3]['base_stat']
-    print(f"Attack: {attack}, Defense: {defense}")
+
+    with open(f'pokemon_{ID}.json', 'w') as f:
+        json.dump(pokemon_data, f, indent=4)
 else:
-    print("Failed to retrieve data from the API")
+    print(f"Failed to retrieve data for Pokemon with ID {ID}")
