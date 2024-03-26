@@ -5,16 +5,19 @@
 - Name
     + ['name']
 
+- Base experience (gained for defeating this Pokémon)
+    + ['base_experience']
+
 - Type 1, 2
     + ['types']['type']['name']
 
 - Gender
     + ['species']
 
-- Height
+- Height (decimetres ~ 0.1m)
     + ['height']
 
-- Weight
+- Weight (hectograms ~ 0.1kg)
     + ['weight']
 
 - HP
