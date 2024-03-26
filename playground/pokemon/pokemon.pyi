@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Pokemon:
     """
     Pokémon class has the following attributes:
@@ -16,7 +19,7 @@ class Pokemon:
         - _image: str
     """
 
-    def __init__(self, _dict: dict):
+    def __init__(self, _dict: dict[str, Any]) -> None:
         """
         Pokémon constructor
 
