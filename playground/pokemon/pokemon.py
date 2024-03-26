@@ -6,6 +6,7 @@ class Pokemon:
         # @formatter:off
         self._id: int       = _dict['id']
         self._name: str     = _dict['name']
+        self._base_exp: int = _dict['base_experience']
         self._height: int   = _dict['height']
         self._weight: int   = _dict['weight']
 
