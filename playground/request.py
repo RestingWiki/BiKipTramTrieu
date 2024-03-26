@@ -38,7 +38,6 @@ def main():
 
 
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time.perf_counter()
     main()
-    end_time = time.time()
-    print(f'\033[0mIt take {end_time - start_time}s to complete!\033[94;1m')
+    print(f'\033[0mIt take {time.perf_counter() - start_time}s to complete!\033[94;1m')
