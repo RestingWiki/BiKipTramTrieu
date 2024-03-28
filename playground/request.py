@@ -24,7 +24,7 @@ def get_pokemon_data(pokemon_id: int) -> str:
 
 def main():
     with open('pokemon_threading.csv', 'a') as csv:
-        csv.write(f'id,name,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image\n')
+        csv.write(f'id,name,base_exp,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image\n')
 
         def process_pokemon(i):
             try:
