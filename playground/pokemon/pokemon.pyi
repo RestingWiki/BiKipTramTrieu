@@ -46,3 +46,17 @@ class Pokemon:
         :return: Returns a csv string of the Pokémon attributes
         """
         ...
+
+    @property
+    def type1(self) -> str:
+        """
+        :return: Returns the first type of the Pokémon
+        """
+        ...
+
+    @property
+    def type2(self) -> str:
+        """
+        :return: Returns the second type of the Pokémon
+        """
+        ...

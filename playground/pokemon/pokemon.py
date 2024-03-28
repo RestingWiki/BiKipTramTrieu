@@ -29,6 +29,14 @@ class Pokemon:
     def csv(self) -> str:
         return ','.join(str(value) for value in self.__dict__.values())
 
+    @property
+    def type1(self) -> str:
+        return self._type_1
+
+    @property
+    def type2(self) -> str:
+        return self._type_2
+
     # def label(self) -> str:
     #     return ','.join(
     #         attr[1:] for attr in dir(self) if not attr.startswith('_') and not callable(getattr(self, attr))
