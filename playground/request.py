@@ -49,8 +49,18 @@ def process_pokemon(i):
 
 
 def main():
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(process_pokemon, range(1, 5))
+    with open('pokemon_threading.csv', 'a') as csv:
+        csv.write(f'id,name,base_exp,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image\n')
+
+        def process_pokemon(i):
+            try:
+                csv.write(f'{get_pokemon_data(i)}\n')
+                print(f'\033[92;1m{i} pokemons have been processed\033[0m')
+            except StatusError as e:
+                print(f'\033[91;1mError processing Pokemon {i}: {e}\033[0m')
+
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            executor.map(process_pokemon, range(1, 1027))
 
 
 if __name__ == "__main__":

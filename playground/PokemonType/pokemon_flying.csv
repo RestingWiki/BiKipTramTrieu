@@ -1,0 +1,10 @@
+id,name,base_exp,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image
+641,tornadus-incarnate,290,15,630,flying,null,79,115,70,125,80,111,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/641.png
+714,noibat,49,5,80,flying,dragon,40,30,35,45,40,55,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/714.png
+715,noivern,187,15,850,flying,dragon,85,70,80,97,80,123,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png
+821,rookidee,49,2,18,flying,null,38,47,35,33,35,57,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png
+823,corviknight,248,22,750,flying,steel,98,87,105,53,85,67,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png
+822,corvisquire,128,8,160,flying,null,68,67,55,43,55,77,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png
+845,cramorant,166,8,180,flying,water,70,85,55,85,95,85,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/845.png
+962,bombirdier,None,15,429,flying,dark,70,103,85,60,85,82,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png
+973,flamigo,None,16,370,flying,fighting,82,115,74,75,64,90,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png
