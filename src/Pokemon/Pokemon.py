@@ -32,7 +32,7 @@ class Pokemon:
     def taken_damage(self, damage_taken):
         pass
 
-    def defense(self, damage_taken):
+    def defend(self, damage_taken):
         pass
 
     def use_skill_1(self, num):
@@ -50,5 +50,15 @@ class Pokemon:
     def interact(self):
         pass
 
-    def 
+    def __getitem__(self, attribute):
+        return self.__dict__.get(attribute)
 
+    def _die(self):
+        pass
+
+    @staticmethod
+    def _get_data_from_csv(_id):
+        with open(DATA_PATH, 'r') as f:
+            for i, text in enumerate(f):
+                if i == _id:
+                    return text.strip()
