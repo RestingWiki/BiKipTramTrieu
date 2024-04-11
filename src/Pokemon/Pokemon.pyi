@@ -1,4 +1,4 @@
-from typing import NoReturn, Any
+from typing import NoReturn, List, Any
 
 from src.Image import Image
 from src.PokeItem import PokeItem
@@ -112,7 +112,7 @@ class Pokemon():
         ...
 
     @staticmethod
-    def _get_data_from_csv(_id: int) -> str:
+    def _get_data_from_csv(_id: int) -> List:
         """
 
         :param _id:

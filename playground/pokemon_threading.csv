@@ -719,7 +719,7 @@ id,name,base_exp,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image
 718,zygarde-50,300,50,3050,dragon,ground,108,100,121,81,95,95,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/718.png
 719,diancie,300,7,88,rock,fairy,50,100,150,100,150,50,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png
 721,volcanion,300,17,1950,fire,water,80,110,120,130,90,70,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/721.png
-                                                                                                                                                         723,dartrix,147,7,160,grass,flying,78,75,75,70,70,52,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png
+723,dartrix,147,7,160,grass,flying,78,75,75,70,70,52,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png
 722,rowlet,64,3,15,grass,flying,68,55,55,50,50,42,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png
 725,litten,64,4,43,fire,null,45,65,40,60,40,70,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png
 726,torracat,147,7,250,fire,null,65,85,50,80,50,90,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/726.png
@@ -820,8 +820,7 @@ id,name,base_exp,height,weight,type1,type2,hp,atk,def,sp_atk,sp_def,speed,image
 821,rookidee,49,2,18,flying,null,38,47,35,33,35,57,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png
 822,corvisquire,128,8,160,flying,null,68,67,55,43,55,77,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png
 823,corviknight,248,22,750,flying,steel,98,87,105,53,85,67,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png
-�r50���5]�03ֵ'il��A1                �q���	�\��E��5j�e�4�
-�fKMizK�⺎BM&cS�続oX�                ��	���b�^'��7�%�������e�l��E@�����]��*<}u�        824,blipbug,36,4,80,bug,null,25,20,20,25,45,45,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png
+824,blipbug,36,4,80,bug,null,25,20,20,25,45,45,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png
 825,dottler,117,4,195,bug,psychic,50,35,80,50,90,30,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/825.png
 827,nickit,49,6,89,dark,null,40,28,28,47,52,50,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/827.png
 826,orbeetle,253,4,408,bug,psychic,60,45,110,80,120,90,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/826.png

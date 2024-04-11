@@ -1,6 +1,5 @@
 import os
-
-DATA_PATH = os.path.join(os.path.dirname(__file__), 'Pokemon_dataset.csv')
+from nguyenpanda.swan import Color
 
 
 class LoadData:
@@ -13,15 +12,18 @@ class LoadData:
 
     @classmethod
     def __get_data(cls):
-        cls.__POKE_DATA_SET = {}
+        print(Color['cyan'] + '__get_data' + Color.reset)  # TODO: DELETE
 
+        cls.__POKE_DATA_SET = {}
+        DATA_PATH = os.path.join(os.path.dirname(__file__), 'Pokemon_dataset.csv')
         with open(DATA_PATH, 'r') as f:
             for line, text in enumerate(f):
+                if line == 0:
+                    continue
                 cls.__POKE_DATA_SET[line] = text.strip()
+
 
 if __name__ == '__main__':
     a = LoadData()
-    print(type(a))
-    print(len(a))
-    for i, j in a:
-        print(i, j)
+    for i in a.values():
+        print(i)
