@@ -1,26 +1,27 @@
-import os
-
 from src.PokeItem import PokeItem
-
-DATA_PATH = os.path.join(os.path.dirname(__file__), 'Pokemon_dataset.csv')
+from src.GameInit import LoadData
 
 
 class Pokemon:
 
     def __init__(self, _id):
+        data: list = Pokemon._get_data_from_csv(_id)
         # @formatter:off
-        self._id        = DICT_DATA['_id']
-        self._name      = DICT_DATA['_name']
-        self._type1     = DICT_DATA['_type1']
-        self._type2     = DICT_DATA['_type2']
-        self._hp        = DICT_DATA['_hp']
-        self._atk       = DICT_DATA['_atk']
-        self._def       = DICT_DATA['_def']
-        self._speed     = DICT_DATA['_speed']
-        self._sp_atk    = DICT_DATA['_sp_atk']
-        self._sp_def    = DICT_DATA['_sp_def']
-        self._image     = DICT_DATA['_image']
-        self._status    = DICT_DATA['_status']
+        self._id        = data[0]
+        self._name      = data[1]
+        # self._base_exp  = data[2]
+        # self._height    = data[3]
+        # self._weight    = data[4]
+        self._type1     = data[5]
+        self._type2     = data[6]
+        self._hp        = data[7]
+        self._atk       = data[8]
+        self._def       = data[9]
+        self._sp_atk    = data[10]
+        self._sp_def    = data[11]
+        self._speed     = data[12]
+        self._image     = data[13]
+        self._status    = 'alive'
         # @formatter:on
 
     def show_image(self):
@@ -58,7 +59,12 @@ class Pokemon:
 
     @staticmethod
     def _get_data_from_csv(_id):
-        with open(DATA_PATH, 'r') as f:
-            for i, text in enumerate(f):
-                if i == _id:
-                    return text.strip()
+        a: list = LoadData().get(_id).split(',')
+        return a
+
+
+if __name__ == '__main__':
+    list_of_poke: list = [Pokemon(i) for i in range(1, 101)]
+
+    for i in list_of_poke:
+        print(i.__dict__)

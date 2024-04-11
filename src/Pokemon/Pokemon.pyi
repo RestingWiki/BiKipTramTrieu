@@ -1,4 +1,4 @@
-from typing import NoReturn, Any
+from typing import NoReturn, List, Any
 
 from src.Image import Image
 from src.PokeItem import PokeItem
@@ -106,13 +106,13 @@ class Pokemon():
 
     def _die(self) -> NoReturn:
         """
-        Modify the pokemon status to un-alive
+        Modify the Pokémon status to un-alive
         :return: NoReturn
         """
         ...
 
     @staticmethod
-    def _get_data_from_csv(_id: int) -> str:
+    def _get_data_from_csv(_id: int) -> List:
         """
 
         :param _id:
