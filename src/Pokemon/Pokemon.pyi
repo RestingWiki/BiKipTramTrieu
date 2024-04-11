@@ -106,7 +106,7 @@ class Pokemon():
 
     def _die(self) -> NoReturn:
         """
-        Modify the pokemon status to un-alive
+        Modify the Pokémon status to un-alive
         :return: NoReturn
         """
         ...
