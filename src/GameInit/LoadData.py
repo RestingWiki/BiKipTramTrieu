@@ -1,5 +1,5 @@
 import os
-from nguyenpanda.swan import Color
+from nguyenpanda.swan import Color  # TODO: DELETE
 
 
 class LoadData:
