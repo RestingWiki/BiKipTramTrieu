@@ -1,5 +1,7 @@
+from typing import Optional
+
+from src.GameInit.LoadData import LoadData
 from src.PokeItem import PokeItem
-from src.GameInit import LoadData
 
 
 class Pokemon:
@@ -21,7 +23,7 @@ class Pokemon:
         self._sp_def    = data[11]
         self._speed     = data[12]
         self._image     = data[13]
-        self._status    = 'alive'
+        self._status    = True
         # @formatter:on
 
     def show_image(self):
@@ -59,8 +61,9 @@ class Pokemon:
 
     @staticmethod
     def _get_data_from_csv(_id):
-        a: list = LoadData().get(_id).split(',')
-        return a
+        pokemon_info: Optional[str] = LoadData().get(_id)
+        assert pokemon_info is not None, f'{_id} not found in LoadData'
+        return pokemon_info.split(',')
 
 
 if __name__ == '__main__':
