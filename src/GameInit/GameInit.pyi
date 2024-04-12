@@ -5,7 +5,7 @@ from src.Pokemon import Pokemon
 
 class GameInit:
 
-    def __init__(self, team_1: int, team_2: int) -> NoReturn:
+    def __init__(self, team_1: int = 3, team_2: int = 3) -> NoReturn:
         """
 
         :param team_1:
