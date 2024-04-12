@@ -1,10 +1,11 @@
-from typing import Any
+from typing import Optional, Dict
 
 
 class LoadData:
-    __POKE_DATA_SET = None
 
-    def __new__(cls) -> Any:
+    __POKE_DATA_SET: Optional[Dict[int, str]] = None
+
+    def __new__(cls) -> Optional[Dict[int, str]]:
         """
         Overrides the __new__ method to ensure that only one instance of LoadData is created.
         If the data set is not already loaded, it calls the __get_data method to load the data.
