@@ -1,6 +1,6 @@
 import threading
-from src.game_init.load_data2 import LoadData
-from src.pokemon import Pokemon
+from src.load_data2 import LoadData
+from src.pokemon.Pokemon2 import Pokemon
 from nguyenpanda.swan import Color
 
 MAX_POKEMON_ID: int = 1025
@@ -13,9 +13,9 @@ class GameInit:
         self._team_1 = team_1
         self._team_2 = team_2
         self._pokemons = []
-        # self._pokemons.append(Pokemon(1))
-        # self._load_Image()
-        self._pokemons = [Pokemon(n) for n in range(1, MAX_POKEMON_ID + 1)]
+        self._pokemons.append(Pokemon(1))
+        self._load_Image()
+        #self._pokemons = [Pokemon(n) for n in range(1, MAX_POKEMON_ID + 1)]
 
     def get_pokemons(self, _id: int):
         return self._pokemons[_id - 1]

@@ -1,4 +1,4 @@
-from src import GameInit
+from src.game_init import GameInit
 from nguyenpanda.swan import Color
 
 from time import perf_counter
