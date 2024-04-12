@@ -38,9 +38,9 @@ class Pokemon:
         self._status: bool  = ...
         # @formatter:on
 
-    def show_image(self) -> Image:
+    def show_image(self) -> NoReturn:
         """
-        :return: An image object representing the Pokemon.
+
         """
         ...
 

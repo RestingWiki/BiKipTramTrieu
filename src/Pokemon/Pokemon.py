@@ -1,6 +1,7 @@
 from typing import Optional
 
 from src.GameInit.LoadData import LoadData
+from src.Image import Image
 from src.PokeItem import PokeItem
 
 
@@ -22,12 +23,12 @@ class Pokemon:
         self._sp_atk    = data[10]
         self._sp_def    = data[11]
         self._speed     = data[12]
-        self._image     = data[13]
+        self._image     = Image(_id)
         self._status    = True
         # @formatter:on
 
     def show_image(self):
-        pass
+        self._image.show()
 
     def attack(self):
         pass
