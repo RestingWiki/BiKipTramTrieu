@@ -1,7 +1,7 @@
 from typing import NoReturn, List, Any
 
 from src.Image import Image
-from src.PokeItem import PokeItem
+from src.poke_item import PokeItem
 
 
 class Pokemon:
@@ -79,7 +79,7 @@ class Pokemon:
 
     def use_item(self, item: PokeItem) -> NoReturn:
         """
-        :param item: A instance of PokeItem
+        :param item: A instance of poke_item
         :return: NoReturn
         """
         ...

@@ -1,8 +1,8 @@
 from typing import Optional
 
-from src.GameInit.LoadData2 import LoadData
+from src.game_init.load_data2 import LoadData
 from src.Image import Image
-from src.PokeItem import PokeItem
+from src.poke_item import PokeItem
 from src.pokemon.PokeExption import NoPokeId
 
 

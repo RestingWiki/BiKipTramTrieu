@@ -2,7 +2,7 @@ import threading
 
 import requests
 
-from src.GameInit import GameInit
+from src.game_init import GameInit
 
 game = GameInit()
 

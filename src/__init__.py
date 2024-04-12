@@ -1,5 +1,5 @@
 from .pokemon import Pokemon
-from .GameInit import GameInit
+from .game_init import GameInit
 
 __all__ = (
     'Pokemon',
