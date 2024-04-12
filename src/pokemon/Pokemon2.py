@@ -1,6 +1,6 @@
 from typing import Optional
 
-from src.load_data2 import LoadData
+from src.load_data import LoadData
 from src.Image import Image
 from src.pokemon.PokeExption import NoPokeId
 

@@ -1,5 +1,5 @@
 import threading
-from src.load_data2 import LoadData
+from src.load_data import LoadData
 from src.pokemon.Pokemon2 import Pokemon
 from nguyenpanda.swan import Color
 
