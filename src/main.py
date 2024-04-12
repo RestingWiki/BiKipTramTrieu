@@ -1,38 +1,15 @@
-"""
-Created by hatuongnguyen on 13:31:31 - 3/24/24
+from src import GameInit
+from nguyenpanda.swan import Color
 
-Project: BiKipTramTrieu
-Path: BiKipTramTrieu/src
-"""
+from time import perf_counter
 
-import string
-import time
+if __name__ == '__main__':
+    print(Color['c'] + 'START!!!' + Color.reset)
 
-slogan: string = 'Welcome to our multilevel team, you will be a billionaire if you join our team!'
+    start = perf_counter()
+    game_initial = GameInit()
+    end = perf_counter()
 
+    print(Color['c'] + 'END' + Color.reset)
+    print('Finished in ' + Color['y'] + f'{end - start}' + Color.reset + 's')
 
-def printSlow(text: string, delay: float = 0.02):
-    temp = ''
-    for char in text:
-        if char in string.printable:
-            temp += ('\033[92;1m' + char + '\033[0m')
-            print(temp, end='\r')
-            time.sleep(delay)
-
-
-def printALot(text: string, delay: float = 0.005):
-    temp = ''
-    for char in text:
-        for i in string.printable:
-            if i == char or char == ' ':
-                time.sleep(delay)
-                print(temp + '\033[91;1m' + i + '\033[0m')
-                temp += ('\033[92;1m' + char + '\033[0m')
-                break
-            else:
-                time.sleep(delay)
-                print(temp + '\033[91;1m' + i + '\033[0m')
-
-
-printALot(slogan)
-printSlow(slogan)

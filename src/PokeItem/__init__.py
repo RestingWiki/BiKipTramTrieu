@@ -1,5 +1,5 @@
 from .PokeItem import PokeItem
 
-__all__ = [
-    'PokeItem'
-]
+__all__ = (
+    'PokeItem',
+)

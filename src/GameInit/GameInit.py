@@ -7,6 +7,7 @@ MAX_POKEMON_ID: int = 1025
 class GameInit:
 
     def __init__(self, team_1=3, team_2=3):
+        LoadData()
         self._team_1 = team_1
         self._team_2 = team_2
         self._pokemons = [Pokemon(n) for n in range(1, MAX_POKEMON_ID + 1)]
