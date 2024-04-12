@@ -3,7 +3,6 @@ from nguyenpanda.swan import Color  # TODO: DELETE
 
 
 class LoadData:
-
     __POKE_DATA_SET = None
 
     def __new__(cls):

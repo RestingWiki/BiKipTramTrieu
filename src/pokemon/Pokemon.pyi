@@ -53,7 +53,7 @@ class Pokemon:
     def taken_damage(self, damage_taken: int) -> int:
         """
         :param damage_taken: The amount of damage taken.
-        :return: The amount of damage taken of this Pokemon.
+        :return: The amount of damage taken of this pokemon.
         """
         ...
 

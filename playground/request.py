@@ -82,7 +82,7 @@ def main():
     for r in rows:
         print(r)
     with open('sorted_pokemon.csv', 'w', newline='\n') as sortedCSV:
-        # Rows [[]]: a sorted list, each row is a list of Pokemon attributes
+        # Rows [[]]: a sorted list, each row is a list of pokemon attributes
         for line in rows:
             sortedCSV.write(','.join(line) + '\n')
         print("Finished writing sorted csv!")

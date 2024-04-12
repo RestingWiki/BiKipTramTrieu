@@ -1,6 +1,6 @@
 from typing import NoReturn, Dict, List
-from src.GameInit import LoadData
-from src.Pokemon import Pokemon
+from src.pokemon import Pokemon
+from nguyenpanda.swan import Color
 
 
 class GameInit:
@@ -35,4 +35,10 @@ class GameInit:
 
         :return: Diction[int (id), str (Pokémon csv string)]
         """
+        ...
+
+
+    def _load_Image(self) -> NoReturn:
+        ...
+    def _load_image_from_file(self, startID: int, endID: int) -> NoReturn:
         ...

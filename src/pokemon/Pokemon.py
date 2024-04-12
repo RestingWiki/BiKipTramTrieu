@@ -1,9 +1,9 @@
 from typing import Optional
 
-from src.GameInit.LoadData import LoadData
+from src.GameInit.LoadData2 import LoadData
 from src.Image import Image
 from src.PokeItem import PokeItem
-from src.Pokemon.PokeExption import NoPokeId
+from src.pokemon.PokeExption import NoPokeId
 
 
 class Pokemon:
