@@ -44,7 +44,7 @@ class Pokemon:
         """
         ...
 
-    def attack(self) -> NoReturn:
+    def attack(self, other: Pokemon) -> NoReturn:
         """
         :return: NoReturn
         """
@@ -57,7 +57,7 @@ class Pokemon:
         """
         ...
 
-    def defend(self) -> NoReturn:
+    def defend(self, other: Pokemon) -> NoReturn:
         """
         :return: NoReturn
         """
