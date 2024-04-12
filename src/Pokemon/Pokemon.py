@@ -3,6 +3,7 @@ from typing import Optional
 from src.GameInit.LoadData import LoadData
 from src.Image import Image
 from src.PokeItem import PokeItem
+from src.Pokemon.PokeExption import NoPokeId
 
 
 class Pokemon:
@@ -30,13 +31,13 @@ class Pokemon:
     def show_image(self):
         self._image.show()
 
-    def attack(self):
+    def attack(self, other):
         pass
 
     def taken_damage(self, damage_taken):
         pass
 
-    def defend(self, damage_taken):
+    def defend(self, other):
         pass
 
     def use_skill_1(self, num):
@@ -45,7 +46,7 @@ class Pokemon:
     def use_skill_2(self, num):
         pass
 
-    def use_item(self, item: PokeItem):
+    def use_item(self, item):
         pass
 
     def run(self):
@@ -63,7 +64,8 @@ class Pokemon:
     @staticmethod
     def _get_data_from_csv(_id):
         pokemon_info: Optional[str] = LoadData().get(_id)
-        assert pokemon_info is not None, f'{_id} not found in LoadData'
+        if pokemon_info is None:
+            raise NoPokeId(f'{_id} not found in LoadData')
         return pokemon_info.split(',')
 
 
