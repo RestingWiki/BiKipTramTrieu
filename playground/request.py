@@ -1,9 +1,10 @@
 import concurrent.futures
-import time
-import os
 import csv
+import os
+import time
 
 from requests import Response, get as requests_get
+
 from pokemon import Pokemon
 
 
@@ -63,7 +64,7 @@ def main():
             executor.map(process_pokemon, range(1, 1025))
 
 
-if __name__ == "__main__":
+def main():
     start_time = time.perf_counter()
     # main()
     print(f'\033[0mIt take {time.perf_counter() - start_time}s to complete!\033[94;1m')
@@ -85,3 +86,7 @@ if __name__ == "__main__":
         for line in rows:
             sortedCSV.write(','.join(line) + '\n')
         print("Finished writing sorted csv!")
+
+
+if __name__ == "__main__":
+    pokemon_data = get_pokemon_data(773)

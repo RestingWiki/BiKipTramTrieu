@@ -1,8 +1,9 @@
 import os
-from nguyenpanda.swan import Color
+from nguyenpanda.swan import Color  # TODO: DELETE
 
 
 class LoadData:
+
     __POKE_DATA_SET = None
 
     def __new__(cls):
@@ -18,12 +19,10 @@ class LoadData:
         DATA_PATH = os.path.join(os.path.dirname(__file__), 'Pokemon_dataset.csv')
         with open(DATA_PATH, 'r') as f:
             for line, text in enumerate(f):
-                if line == 0:
-                    continue
-                cls.__POKE_DATA_SET[line] = text.strip()
+                cls.__POKE_DATA_SET[line + 1] = text.strip()
 
 
 if __name__ == '__main__':
     a = LoadData()
-    for i in a.values():
-        print(i)
+    for i, j in a.items():
+        print(i, j)

@@ -667,6 +667,7 @@
 667,litleo,74,6,135,fire,normal,62,50,58,73,54,72,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/667.png
 668,pyroar,177,15,815,fire,normal,86,68,72,109,66,106,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png
 669,flabebe,61,1,1,fairy,null,44,38,39,61,79,42,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/669.png
+670,floette,130,2,9,fairy,null,54,45,47,75,98,52,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png
 671,florges,248,11,100,fairy,null,78,65,68,112,154,75,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png
 672,skiddo,70,9,310,grass,null,66,65,48,62,57,52,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/672.png
 673,gogoat,186,17,910,grass,null,123,100,62,97,81,68,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/673.png
@@ -769,6 +770,7 @@
 770,palossand,168,13,2500,ghost,ground,85,75,110,100,75,35,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png
 771,pyukumuku,144,3,12,water,null,55,60,130,30,130,5,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/771.png
 772,type-null,107,19,1205,normal,null,95,95,95,95,95,59,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/772.png
+773,silvally,285,23,1005,normal,null,95,95,95,95,95,95,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png
 774,minior-red-meteor,154,3,400,rock,flying,60,60,100,60,100,60,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/774.png
 775,komala,168,4,199,normal,null,65,115,65,75,95,65,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png
 776,turtonator,170,20,2120,fire,dragon,60,78,135,91,85,36,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/776.png

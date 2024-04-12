@@ -4,7 +4,7 @@ from src.Image import Image
 from src.PokeItem import PokeItem
 
 
-class Pokemon():
+class Pokemon:
     """
     Pokémon class has the following attributes:
         - _id: int
@@ -35,16 +35,16 @@ class Pokemon():
         self._sp_atk: int  = ...
         self._sp_def: int  = ...
         self._image: Image = ...
-        self.status: enum  = ...
+        self._status: bool  = ...
         # @formatter:on
 
-    def show_image(self) -> Image:
+    def show_image(self) -> NoReturn:
         """
-        :return: An image object representing the Pokemon.
+
         """
         ...
 
-    def attack(self) -> NoReturn:
+    def attack(self, other: Pokemon) -> NoReturn:
         """
         :return: NoReturn
         """
@@ -57,7 +57,7 @@ class Pokemon():
         """
         ...
 
-    def defend(self) -> NoReturn:
+    def defend(self, other: Pokemon) -> NoReturn:
         """
         :return: NoReturn
         """
