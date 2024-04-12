@@ -6,7 +6,7 @@ MAX_POKEMON_ID: int = 1025
 
 class GameInit:
 
-    def __init__(self, team_1, team_2):
+    def __init__(self, team_1=3, team_2=3):
         self._team_1 = team_1
         self._team_2 = team_2
         self._pokemons = [Pokemon(n) for n in range(1, MAX_POKEMON_ID + 1)]
@@ -20,7 +20,5 @@ class GameInit:
 
 
 if __name__ == '__main__':
-    game_init = GameInit(3, 3)
-    # a = GameInit.get_pokemon_data()
-    # for i, j in a.items():
-    #     print(i, j)
+    game_init = GameInit()
+
