@@ -54,7 +54,7 @@ class Pokemon:
         pass
 
     def __getitem__(self, attribute):
-        return self.__dict__.get(attribute)
+        return self.__dict__.get('_' + attribute)
 
     def _die(self):
         pass
