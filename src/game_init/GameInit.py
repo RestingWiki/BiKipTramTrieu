@@ -33,8 +33,7 @@ class GameInit:
         num_threads = 10
         threads = []
         ids_per_thread = (end_id - start_id) // num_threads
-        print(ids_per_thread, 'ids per thread')
-        for i in range(num_threads):
+        for i in range(num_threads + 1):
             thread_start_id = start_id + i * ids_per_thread
             thread_end_id = start_id + (i + 1) * ids_per_thread
             if thread_start_id == start_id + num_threads * ids_per_thread:
