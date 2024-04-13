@@ -67,6 +67,12 @@ class Pokemon:
             raise NoPokeId(f'{_id} not found in LoadData')
         return pokemon_info.split(',')
 
+    def __repr__(self):
+        return f'<Pokemon {self._id}>'
+
+    def __str__(self):
+        return f'Pokemon({self._id}, {self._name})'
+
 
 if __name__ == '__main__':
     list_of_poke: list = [Pokemon(i) for i in range(1, 101)]
