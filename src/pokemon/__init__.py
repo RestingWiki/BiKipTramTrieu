@@ -1,4 +1,4 @@
-from .Pokemon2 import Pokemon
+from .Pokemon import Pokemon
 from .PokeExption import NoPokeId
 
 __all__ = (

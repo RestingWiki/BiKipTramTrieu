@@ -1,6 +1,6 @@
 import threading
 from src.load_data import LoadData
-from src.pokemon.Pokemon2 import Pokemon
+from src.pokemon.Pokemon import Pokemon
 from nguyenpanda.swan import Color
 
 MAX_POKEMON_ID: int = 1025
