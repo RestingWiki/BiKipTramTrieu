@@ -64,7 +64,7 @@ class Pokemon:
     def _get_data_from_csv(_id):
         pokemon_info: Optional[str] = LoadData().get(_id)
         if pokemon_info is None:
-            raise NoPokeId(f'{_id} not found in LoadData')
+            raise NoPokeId(_id)
         return pokemon_info.split(',')
 
     def __repr__(self):
