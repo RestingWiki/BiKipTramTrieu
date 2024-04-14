@@ -71,7 +71,7 @@ class Pokemon:
         return f'<Pokemon {self._id}>'
 
     def __str__(self):
-        return f'Pokemon({self._id}, {self._name})'
+        return f'Pokemon(id={self._id}, name={self._name})'
 
 
 if __name__ == '__main__':
