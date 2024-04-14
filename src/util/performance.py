@@ -18,9 +18,9 @@ def perf(precision: int = 4, unit: str = 's') -> Callable:
             start = timer()
             result = func(*args, **kwargs)
             end = timer()
-            print(f'Function '
-                  f'{Color['c']}{func.__name__}{Color.reset} '
-                  f'took {Color['c']}{end - start:.{precision}f}{Color.reset} {unit_str}')
+            print(f'\t{Color['y']}==>{Color.reset} Func '
+                  f'\'{Color['y']}{func.__name__}{Color.reset}\' '
+                  f'took {Color['y']}{end - start:.{precision}f}{Color.reset} {unit_str}')
             return result
 
         return wrapper
