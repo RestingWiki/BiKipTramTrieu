@@ -1,17 +1,14 @@
-import numpy as np
-
-from typing import NoReturn
+from typing import BinaryIO, NoReturn
 
 class Image:
 
-    def __init__(self, _id) -> NoReturn:
+    def __init__(self, _id):
         """
 
         :param _id:
         """
         self._id: int = ...
-        self._img: np.ndarray = ...
-        ...
+        self._path: str = ...
 
     def show(self) -> NoReturn:
         """
@@ -20,7 +17,7 @@ class Image:
         """
         ...
 
-    def image_data(self) -> np.ndarray:
+    def bin(self) -> BinaryIO:
         """
 
         :return:
