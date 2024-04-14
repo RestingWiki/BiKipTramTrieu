@@ -1,38 +1,21 @@
-"""
-Created by hatuongnguyen on 13:31:31 - 3/24/24
+from src.util import perf
+from src.game_init import GameInit
+from nguyenpanda.swan import Color
 
-Project: BiKipTramTrieu
-Path: BiKipTramTrieu/src
-"""
+from time import perf_counter
 
-import string
-import time
+@perf(precision=2, unit='s')
+def main():
+    game_initial = GameInit()
+    print(game_initial)
 
-slogan: string = 'Welcome to our multilevel team, you will be a billionaire if you join our team!'
+if __name__ == '__main__':
+    print(Color['c'] + 'START!!!' + Color.reset)
 
+    start = perf_counter()
+    main()
+    end = perf_counter()
 
-def printSlow(text: string, delay: float = 0.02):
-    temp = ''
-    for char in text:
-        if char in string.printable:
-            temp += ('\033[92;1m' + char + '\033[0m')
-            print(temp, end='\r')
-            time.sleep(delay)
+    print(Color['c'] + 'END' + Color.reset)
+    print('Finished in ' + Color['y'] + f'{end - start}' + Color.reset + 's')
 
-
-def printALot(text: string, delay: float = 0.005):
-    temp = ''
-    for char in text:
-        for i in string.printable:
-            if i == char or char == ' ':
-                time.sleep(delay)
-                print(temp + '\033[91;1m' + i + '\033[0m')
-                temp += ('\033[92;1m' + char + '\033[0m')
-                break
-            else:
-                time.sleep(delay)
-                print(temp + '\033[91;1m' + i + '\033[0m')
-
-
-printALot(slogan)
-printSlow(slogan)

@@ -1,6 +1,7 @@
 import concurrent.futures
-import time
+import csv
 import os
+import time
 
 from requests import Response, get as requests_get
 
@@ -39,7 +40,7 @@ def write_pokemon_data_by_type(data):
         csv.write(f'{data}\n')
 
 
-def process_pokemon(i):
+def process_pokemon_type(i):
     try:
         pokemon_data = get_pokemon_data(i)
         write_pokemon_data_by_type(pokemon_data)
@@ -60,10 +61,32 @@ def main():
                 print(f'\033[91;1mError processing Pokemon {i}: {e}\033[0m')
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            executor.map(process_pokemon, range(1, 1027))
+            executor.map(process_pokemon, range(1, 1025))
+
+
+def main():
+    start_time = time.perf_counter()
+    # main()
+    print(f'\033[0mIt take {time.perf_counter() - start_time}s to complete!\033[94;1m')
+    # Read the CSV file into a list of rows
+    rows = list(csv.reader(open('pokemon_threading.csv')))
+
+    # Now, 'rows' is a list where each element is a list representing a row in the CSV file
+    # Bubblesort
+    rows = rows[1:]
+    for i in range(len(rows)):
+        for j in range(len(rows) - 1):
+            if int(rows[j][0]) > int(rows[j + 1][0]):
+                rows[j], rows[j + 1] = rows[j + 1], rows[j]
+
+    for r in rows:
+        print(r)
+    with open('sorted_pokemon.csv', 'w', newline='\n') as sortedCSV:
+        # Rows [[]]: a sorted list, each row is a list of pokemon attributes
+        for line in rows:
+            sortedCSV.write(','.join(line) + '\n')
+        print("Finished writing sorted csv!")
 
 
 if __name__ == "__main__":
-    start_time = time.perf_counter()
-    main()
-    print(f'\033[0mIt take {time.perf_counter() - start_time}s to complete!\033[94;1m')
+    pokemon_data = get_pokemon_data(773)
