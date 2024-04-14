@@ -10,69 +10,69 @@ class PokeSkill:
         ...
 
     @staticmethod
-    def _dark(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def dark(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _dragon(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def dragon(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _electric(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def electric(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _fairy(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def fairy(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _fighting(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def fighting(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _fire(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def fire(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _flying(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def flying(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _ghost(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def ghost(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _grass(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def grass(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _ground(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def ground(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _ice(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def ice(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _normal(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def normal(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _poison(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def poison(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _psychic(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def psychic(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _rock(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def rock(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _steel(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def steel(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
 
     @staticmethod
-    def _water(p1: Pokemon, p2: Pokemon) -> NoReturn:
+    def water(p1: Pokemon, p2: Pokemon) -> NoReturn:
         ...
