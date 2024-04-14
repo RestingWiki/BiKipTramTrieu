@@ -23,3 +23,6 @@ class Image:
         :return:
         """
         ...
+
+    def __str__(self) -> str:
+        ...
