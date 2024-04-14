@@ -6,3 +6,6 @@ class IEvent(ABC):
     def active_event(self):
         pass
 
+    @abstractmethod
+    def __str__(self):
+        pass
