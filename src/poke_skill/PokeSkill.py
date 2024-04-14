@@ -1,7 +1,8 @@
-from src.pokemon import Pokemon
-
-
 class PokeSkill:
+
+    @staticmethod
+    def bug(aggressor, target):
+        pass
 
     @staticmethod
     def dark(aggressor, target):
