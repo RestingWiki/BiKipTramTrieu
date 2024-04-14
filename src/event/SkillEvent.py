@@ -1,5 +1,6 @@
 from src.poke_skill import PokeSkill
-from .IEvent import IEvent
+from src.event.IEvent import IEvent
+from src.event.EventException import SkillEventException
 
 
 class SkillEvent(IEvent):
@@ -17,7 +18,7 @@ class SkillEvent(IEvent):
         if hasattr(PokeSkill, poke_type):
             return getattr(PokeSkill, poke_type)
         else:
-            raise AttributeError  # TODO: CHANGE
+            raise SkillEventException
 
     def __str__(self):
         return f'{self._pokemon} fucks {[self._team_list]} by {self._skill_effect}'
