@@ -7,6 +7,7 @@ class PokeSkill:
     def do(p1, p2):
         t1, t2 = p1['type1'], p2['type1']
 
+
     @staticmethod
     def _dark(p1, p2):
         pass
