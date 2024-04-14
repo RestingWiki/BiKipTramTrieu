@@ -4,69 +4,69 @@ from src.pokemon import Pokemon
 class PokeSkill:
 
     @staticmethod
-    def dark(p1, p2):
+    def dark(aggressor, target):
         pass
 
     @staticmethod
-    def dragon(p1, p2):
+    def dragon(aggressor, target):
         pass
 
     @staticmethod
-    def electric(p1, p2):
+    def electric(aggressor, target):
         pass
 
     @staticmethod
-    def fairy(p1, p2):
+    def fairy(aggressor, target):
         pass
 
     @staticmethod
-    def fighting(p1, p2):
+    def fighting(aggressor, target):
         pass
 
     @staticmethod
-    def fire(p1, p2):
+    def fire(aggressor, target):
         pass
 
     @staticmethod
-    def flying(p1, p2):
+    def flying(aggressor, target):
         pass
 
     @staticmethod
-    def ghost(p1, p2):
+    def ghost(aggressor, target):
         pass
 
     @staticmethod
-    def grass(p1, p2):
+    def grass(aggressor, target):
         pass
 
     @staticmethod
-    def ground(p1, p2):
+    def ground(aggressor, target):
         pass
 
     @staticmethod
-    def ice(p1, p2):
+    def ice(aggressor, target):
         pass
 
     @staticmethod
-    def normal(p1, p2):
+    def normal(aggressor, target):
         pass
 
     @staticmethod
-    def poison(p1, p2):
+    def poison(aggressor, target):
         pass
 
     @staticmethod
-    def psychic(p1, p2):
+    def psychic(aggressor, target):
         pass
 
     @staticmethod
-    def rock(p1, p2):
+    def rock(aggressor, target):
         pass
 
     @staticmethod
-    def steel(p1, p2):
+    def steel(aggressor, target):
         pass
 
     @staticmethod
-    def water(p1, p2):
+    def water(aggressor, target):
         pass
