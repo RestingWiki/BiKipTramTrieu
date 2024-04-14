@@ -79,7 +79,7 @@ class Pokemon:
 
     def use_item(self, item: PokeItem) -> NoReturn:
         """
-        :param item: A instance of poke_item
+        :param item: Arena instance of poke_item
         :return: NoReturn
         """
         ...

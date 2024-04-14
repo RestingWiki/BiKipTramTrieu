@@ -23,7 +23,7 @@ class Pokemon:
         """
         Pokémon constructor
 
-        :param _dict: A dictionary, which is converted json into a Python dictionary,
+        :param _dict: Arena dictionary, which is converted json into a Python dictionary,
             contains the Pokémon attributes
         """
         self._id: int = ...
