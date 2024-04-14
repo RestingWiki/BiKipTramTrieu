@@ -22,6 +22,9 @@ class Image:
     def bin(self) -> BinaryIO:
         return open(self._path, 'rb')
 
+    def __str__(self):
+        return f'<{self.__class__.__name__}(id={self._id})>'
+
 
 if __name__ == '__main__':
     poke = Image(3)
