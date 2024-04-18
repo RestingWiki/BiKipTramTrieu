@@ -11,13 +11,15 @@ class PokeSkill:
 
 class SkillEvent:  # TODO DONE
 
-    def __init__(self, _pokemon, _team_list: list):
-        self._team_list = _team_list
+    def __init__(self, _pokemon, _enemy_list: list):
+        self._enemy_list = _enemy_list
         self._pokemon = _pokemon
         self._skill_effect = self.__find_skill()
 
     def __active_event(self):
-        map(lambda enemy: self._skill_effect(self._pokemon, enemy), self._team_list)
+        # for enemy in self._enemy_list:
+        #     self._skill_effect(self._pokemon, enemy)
+        map(lambda enemy: self._skill_effect(self._pokemon, enemy), self._enemy_list)
 
     def __find_skill(self):
         poke_type = self._pokemon['type1']  # TODO: HOW TO KNOW WHETHER TYPE1 OR TYPE2
@@ -27,7 +29,7 @@ class SkillEvent:  # TODO DONE
             raise AttributeError  # TODO: CHANGE
 
     def __str__(self):
-        return f'{self._pokemon} fucks {[self._team_list]} by {self._skill_effect}'
+        return f'{self._pokemon} fucks {[self._enemy_list]} by {self._skill_effect}'
 
 
 class Poke:
