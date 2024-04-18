@@ -53,7 +53,7 @@ class Pokemon:
     def taken_damage(self, damage_taken: int) -> int:
         """
         :param damage_taken: The amount of damage taken.
-        :return: The amount of damage taken of this pokemon.
+        :return: The amount of damage taken of this Pokémon.
         """
         ...
 
@@ -65,14 +65,16 @@ class Pokemon:
 
     def use_skill_1(self, allies: List, enemies: List) -> SkillEvent:
         """
-        :param num: The skill ID
+        :param allies: List of allies Pokémon
+        :param enemies: List of enemy Pokémon
         :return: NoReturn
         """
         ...
 
     def use_skill_2(self, allies: List, enemies: List) -> SkillEvent:
         """
-        :param num: The skill ID
+        :param allies: List of allies Pokémon
+        :param enemies: List of enemy Pokémon
         :return: NoReturn
         """
         ...

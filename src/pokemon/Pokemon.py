@@ -40,10 +40,10 @@ class Pokemon:
     def defend(self, other):
         pass
 
-    def use_skill_1(self, num):
+    def use_skill_1(self, allies, enemies):
         pass
 
-    def use_skill_2(self, num):
+    def use_skill_2(self, allies, enemies):
         pass
 
     def use_item(self, item):

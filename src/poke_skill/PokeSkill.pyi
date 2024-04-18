@@ -6,7 +6,7 @@ from src.pokemon import Pokemon
 class PokeSkill:
 
     @staticmethod
-    def do(aggressor: Pokemon, target: Pokemon) -> NoReturn:
+    def bug(aggressor: Pokemon, target: Pokemon) -> NoReturn:
         ...
 
     @staticmethod

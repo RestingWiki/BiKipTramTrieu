@@ -1,3 +1,13 @@
+"""
+- _hp: int
+- _atk: int
+- _def: int
+- _sp_atk: int
+- _sp_def: int
+- _speed: int
+"""
+
+
 class PokeSkill:
 
     @staticmethod
