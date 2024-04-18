@@ -3,6 +3,7 @@ from typing import Optional
 from src.load_data import LoadData
 from src.Image import Image
 from src.pokemon.PokeExption import NoPokeId
+from src.event import SkillEvent
 
 
 class Pokemon:

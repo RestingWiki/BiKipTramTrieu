@@ -2,7 +2,7 @@ from typing import NoReturn, List, Any
 
 from src.Image import Image
 from src.poke_item import PokeItem
-
+from src.event import SkillEvent
 
 class Pokemon:
     """
@@ -63,14 +63,14 @@ class Pokemon:
         """
         ...
 
-    def use_skill_1(self, num: int) -> NoReturn:
+    def use_skill_1(self, allies: List, enemies: List) -> SkillEvent:
         """
         :param num: The skill ID
         :return: NoReturn
         """
         ...
 
-    def use_skill_2(self, num: int) -> NoReturn:
+    def use_skill_2(self, allies: List, enemies: List) -> SkillEvent:
         """
         :param num: The skill ID
         :return: NoReturn
